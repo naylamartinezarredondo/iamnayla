@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+
+.container {
+  border: 2px solid black;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.logo-img{
+    width: 15%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 20px;
+    border-color: lightblue;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 5px;
+}
+
+.intro {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.intro h1 {
+  font-size: 2em;
+}
+
+.intro p {
+  color: rgb(88, 88, 88);;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.projects ul {
+  list-style: none;
+  border: 1px solid black;
+}
+
+.projects li {
+  padding: 8px;
+  border-bottom: 1px solid black;
+}
+
+.projects li:last-child {
+  border-bottom: none;
+}
+
+.experience > div,
+.education {
+  margin-top: 0px;
+}
+
+.experience a,
+.education a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.reviews {
+  margin-top: 30px;
+}
+
+.reviews h2 {
+  margin-bottom: 20px;
+}
+.review-box ul {
+    margin-left: 20px;
+}
+
+.review-box {
+  display: inline-block;
+  width: 100%;
+  min-width: 250px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.review-box span {
+  display: block;
+  color: rgb(88, 88, 88);
+}
+
+.li-background-color {
+    background-color: gray;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+
+/* Responsive Layout */
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .review-box {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .intro h1 {
+    font-size: 1.5em;
+  }
+}
