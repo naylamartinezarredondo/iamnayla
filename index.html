@@ -99,16 +99,25 @@
         <section id="contact">
 
             <h2>Contacto</h2>
-            <p><i class="fa-solid fa-envelope social-links"></i> nayla.martinez.arredondo@gmail.com</p>
-            <p><i class="fa-solid fa-phone social-links"></i><a
+            <p><i class="fa-solid fa-envelope icon-circle"></i> nayla.martinez.arredondo@gmail.com</p>
+            <p><i class="fa-brands fa-whatsapp icon-circle"></i><a
                     href="https://wa.me/528123690045?text=Hola,%20Nayla%20estoy%20interesado%20en%20tu%20perfil"
-                    class="link-personal" target="_blank">WhatsApp</a> +52 (81) 23690045</p>
+                    class="link-personal" target="_blank"> WhatsApp</a>
+            <p><i class="fa-solid fa-phone icon-circle"></i> +52 (81) 23690045</p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Nayla Martínez</p>
     </footer>
+    <button id="btn-top" title="Ir arriba">
+        ↑
+    </button>
+    <script>
+        document.getElementById("btn-top").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 
 </html>

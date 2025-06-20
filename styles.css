@@ -140,8 +140,8 @@ section:nth-of-type(5) { animation-delay: 0.7s; }
   padding-right: 5px;
 }
 
-.link-personal {
-  color: #3d2b6d;
+.link-personal{
+  color: #3d2b6d ;
   text-decoration: none;
 }
 
@@ -149,3 +149,44 @@ section:nth-of-type(5) { animation-delay: 0.7s; }
   color: #a084e8;
   text-decoration: underline;
 }
+
+.icon-circle {
+  background-color: #e2d9f3;         /* o el color que combine con tu página */
+  border-radius: 50%;             /* hace el fondo circular */
+  padding: 3px;                  /* tamaño del círculo */
+  color: #3d2b6d;                    /* color del ícono */
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* opcional: sombra sutil */
+  transition: background-color 0.3s ease;
+}
+
+.icon-circle:hover {
+  background-color: #a084e8; /* efecto al pasar el cursor */
+}
+#btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #e2d9f3;  /* color de fondo */
+  color: #3d2b6d;             /* color del ícono o texto */
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+#btn-top:hover {
+  background-color: #a084e8;
+}
+
