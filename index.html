@@ -4,119 +4,135 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nayla Martínez - Desarrolladora .NET</title>
+    <title>Nayla | Desarrolladora</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-+1Kc4qZyho8S3kV0bGk5XxPMRY1AzExfOv4ONkQkS7eKJ3i4fHeKp0cK6D6G2D0u1K+xQqLQ7+79hHRRkz8twg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles.css" />
+
 </head>
 
 <body>
     <header>
-        <h1>Nayla Martínez</h1>
-        <p>Desarrolladora .NET</p>
         <nav>
-            <a href="#about">Sobre mí</a>
-            <a href="#experience">Experiencia</a>
-            <a href="#skills">Habilidades</a>
-            <!-- <a href="#projects">Proyectos</a> -->
-            <a href="#contact">Contacto</a>
-            <br><br><a href="CV_NaylaMartinez2025.pdf" download class="download-btn">📄 Descargar CV</a>
+            <div class="logo">&lt;iamnaylita&gt;</iamnayla>
+            </div>
+            <!-- <div class="logo">
+                <img src="logo-white.png" alt="Logo Nayla" class="logo-img" />
+            </div> -->
+            <button id="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre mí</a></li>
+                <!-- <li><a href="#proyectos">Proyectos</a></li> -->
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="CV_NaylaMartinez2025.pdf" download class="btn-cv">📄 Descargar CV</a>
+            <!-- <a href="CV_NaylaMartinez2025.pdf" class="btn-cv" download>Descargar CV</a> -->
         </nav>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>Sobre mí</h2>
-            <p>Desarrolladora de software con más de 5 años de experiencia en IT, especializada en .NET y desarrollo de
-                aplicaciones para procesos críticos.</p>
-        </section>
+    <section class="hero" id="inicio">
+        <img src="photo_CV.jpg" alt="Avatar Nayla" class="avatar" />
+        <h1>Hola, soy Nayla</h1>
+        <p>Desarrolladora de software</p>
+    </section>
 
-        <section id="experience">
-            <h2>Experiencia</h2>
-            <div class="job">
-                <h3>Ventus Technology <span>Mar 2024 – Ene 2025</span></h3>
-                <ul>
-                    <li>Implementación de logs en aplicaciones en .NET</li>
-                    <li>Optimización de frameworks</li>
-                    <li>Refactorización de código basada en resultados de escaneos de SonarQube.</li>
-                    <li>Capacitación interna sobre implementación de LogEagle.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Fiscalía General de Justicia de Nuevo León <span>Sep 2023 – Nov 2023</span></h3>
-                <ul>
-                    <li>Desarrollo en funcionalidades .NET bajo el modelo MVC con SQL Server.</li>
-                    <li>Implementación de herramientas de conversión de voz a texto con Python y C#</li>
-                    <li>Evaluación de Google Cloud Speech-to-Text y OpenAI para futuros proyectos.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>CrediClub<span>Ago 2021 – Ago 2023</span></h3>
-                <ul>
-                    <li>Creación y mantenimiento de API's en .NET, y bases de datos MySQL y SQLServer.</li>
-                    <li>Automatización de procesos y generación de reportes para Recursos Humanos.</li>
-                    <li>Mitigación de incidencias relacionadas con los escaneos de seguridad.</li>
-                    <li>Azure Storage.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>AlphaCredit<span>2019 – 2021</span></h3>
-                <ul>
-                    <li>Desarrollo de nuevas funcionalidades en ReactNative y Python.</li>
-                    <li>Integración de seguridad en API'sutilizando servicios de AWS.</li>
-                    <li>Creación de stored procedures con PostgreSQL.</li>
-                </ul>
-            </div>
-        </section>
+    <section class="sobre" id="sobre">
+        <h2>Sobre mí</h2>
+        <p></p>
+        <ul>
+            <li>Desarrolladora de software con más de 5 años de experiencia en IT, especializada en .NET y desarrollo de
+                aplicaciones para procesos críticos.</li>
+        </ul>
+    </section>
 
-        <section id="skills">
-            <h2>Habilidades</h2>
-            <div class="skills">
-                <span>.NET</span>
-                <span>ReactNative</span>
-                <span>Python</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Bootstrap</span>
-                <span>SQL Server</span>
-                <span>MySQL</span>
-                <span>PostgreSQL</span>
-                <span>GitHub</span>
-                <span>SonaQube</span>
-                <span>Google Cloud Speech-To-Text</span>
-                <span>OpenAI Speech-To-Text</span>
-                <span>Metodología Scrum</span>
-            </div>
-        </section>
+    <!-- <section class="proyectos" id="proyectos">
+        <h2>Proyectos</h2>
+        <ul>
+            <li>Sistema de recetas con FastAPI</li>
+            <li>Página personal en GitHub Pages</li>
+            <li>Conversor XML ↔ JSON en Python</li>
+        </ul>
+    </section> -->
 
-        <!-- <section id="projects">
-            <h2>Proyectos</h2>
-            <h3>Sistema de Gestión de Inventarios</h3>
-            <p>Aplicación desarrollada en .NET para control de inventarios en tiempo real.</p>
-        </section> -->
+    <section class="experiencia" id="experiencia">
+        <h2>Experiencia</h2>
+        <ul>
+            <li><strong>Desarrollador .NET - Ventus Technology</strong> (Mar 2024 - Ene 2025)
+                <br />- Implementación de logs en aplicaciones en .NET.
+                <br />- Optimización de frameworks.
+                <br />- Refactorización de código basada en resultados de escaneos de SonarQube.
+                <br />- Capacitación interna sobre implementación de LogEagle.
+            </li>
+             <li><strong>Fiscalía General de Justicia de Nuevo León</strong> (Sep 2023 - Nov 2023)
+                <br />- Desarrollo en funcionalidades .NET bajo el modelo MVC con SQL Server.
+                <br />- Implementación de herramientas de conversión de voz a texto con Python y C#.
+                <br />- Evaluación de Google Cloud Speech-to-Text y OpenAI para futuros proyectos.
+            </li>
+                <li><strong>CrediClub</strong> (Ago 2021 - Ago 2023)
+                <br />- Creación y mantenimiento de API's en .NET, y bases de datos MySQL y SQLServer.
+                <br />- Automatización de procesos y generación de reportes para Recursos Humanos.
+                <br />- Mitigación de incidencias relacionadas con los escaneos de seguridad.
+                <br />- Azure Storage.
+            </li>
+            <li><strong>AlphaCredit</strong> (2019 - 2021)
+                <br />- Desarrollo de nuevas funcionalidades en ReactNative y Python.
+                <br />- Integración de seguridad en API'sutilizando servicios de AWS.
+                <br />- Creación de stored procedures con PostgreSQL.
+            </li>
+        </ul>
+    </section>
 
-        <section id="contact">
+    <section class="habilidades" id="habilidades">
+        <h2>Habilidades</h2>
+        <div>
+            <span>.NET</span>
+            <span>ReactNative</span>
+            <span>Python</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Bootstrap</span>
+            <span>SQL Server</span>
+            <span>MySQL</span>
+            <span>PostgreSQL</span>
+            <span>GitHub</span>
+            <span>SonaQube</span>
+            <span>Google Cloud Speech-To-Text</span>
+            <span>OpenAI Speech-To-Text</span>
+            <span>Metodología Scrum</span>
+        </div>
+    </section>
 
-            <h2>Contacto</h2>
-            <p><i class="fa-solid fa-envelope icon-circle"></i> nayla.martinez.arredondo@gmail.com</p>
-            <p><i class="fa-brands fa-whatsapp icon-circle"></i><a
-                    href="https://wa.me/528123690045?text=Hola,%20Nayla%20estoy%20interesado%20en%20tu%20perfil"
-                    class="link-personal" target="_blank"> WhatsApp</a>
-            <p><i class="fa-solid fa-phone icon-circle"></i> +52 (81) 23690045</p>
-        </section>
-    </main>
+    <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <div class="social-links">
+            <p><i class="fa-solid fa-envelope"></i> nayla.martinez.arredondo@gmail.com</p>
+            <p><i class="fa-brands fa-whatsapp"></i><a
+                    href="https://wa.me/528123690045?text=Hola,%20Nayla.%20Estoy%20interesado%20en%20tu%20perfil."
+                    class="link-personal" target="_blank"> Envia un WhatsApp!</a>
+            <p><i class="fa-solid fa-phone"></i> +52 (81) 23690045</p>
+        </div>
+    </section>
+
+    <button id="btn-top" title="Ir arriba">↑</button>
 
     <footer>
-        <p>&copy; 2025 Nayla Martínez</p>
+        <p>&copy; 2025 Nayla Aurora Martínez Arredondo</p>
     </footer>
-    <button id="btn-top" title="Ir arriba">
-        ↑
-    </button>
-    <script>
-        document.getElementById("btn-top").addEventListener("click", function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
