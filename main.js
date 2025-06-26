@@ -17,8 +17,24 @@ btnTop.addEventListener('click', () => {
 const menuToggle = document.getElementById('menu-toggle');
 const menu = document.querySelector('.menu');
 
-menuToggle.addEventListener('click', () => {
+// Abrir/cerrar menú
+menuToggle.addEventListener('click', (e) => {
+  e.stopPropagation(); // Evita que el clic se propague
   menu.classList.toggle('open');
+});
+
+// Cerrar menú al hacer clic fuera
+document.addEventListener('click', (e) => {
+  if (!menu.contains(e.target) && !menuToggle.contains(e.target)) {
+    menu.classList.remove('open');
+  }
+});
+
+// Cerrar menú al hacer clic en un enlace
+document.querySelectorAll('.menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('open');
+  });
 });
 
 // Animar secciones con retardo al cargar
